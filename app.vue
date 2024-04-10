@@ -1,10 +1,11 @@
 <script setup lang="ts">
-  import { SpeedInsights } from "@vercel/speed-insights/vue";
+import { SpeedInsights } from "@vercel/speed-insights/vue";
 </script>
 
 <template>
   <SpeedInsights />
   <div>
-    <NuxtWelcome />
+    <h1>Welcome to the homepage</h1>
+    <AppAlert> This is an auto-imported component. </AppAlert>
   </div>
 </template>
