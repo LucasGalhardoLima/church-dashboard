@@ -4,10 +4,12 @@ import { SpeedInsights } from "@vercel/speed-insights/vue";
 
 
 <template>
-    <div>
+    <div class="fixed inset-0 flex overflow-hidden">
         <SpeedInsights />
-        <AppHeader />
-        <slot />
-        <AppFooter />
+        <SideBar />
+        <MainContainer>
+            <slot />
+        </MainContainer>
+
     </div>
 </template>
