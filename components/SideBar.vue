@@ -25,6 +25,21 @@ const links = [{
 },
 ]
 
+const menuItems = [
+    [{
+        label: 'Profile',
+        avatar: {
+            src: 'https://avatars.githubusercontent.com/u/739984?v=4'
+        }
+    }], [{
+        label: 'Sair',
+        icon: 'i-heroicons-arrow-left-on-rectangle',
+        click: () => {
+            console.log('Deslogado')
+        }
+    }]
+]
+
 const logoLink = 'https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/326348237_1886148091732314_691957993630922162_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=b3n_Vgf_Eg0Ab4XAkvE&_nc_ht=scontent-gru2-1.xx&oh=00_AfD3VJgM_ZHjjieFFfzWbAveSRvgQVziaM7_Kd2UfVlBxw&oe=66278B8E'
 </script>
 
@@ -56,7 +71,20 @@ const logoLink = 'https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/326348237_1
                         </li>
                     </ul>
                 </div>
+                <div class="flex items-center align-center text-center w-full flex-row sticky bottom-0">
+                    <div class="flex border-gray-200 dark:border-gray-800 w-full border-t border-solid"></div>
+                </div>
             </div>
+        </div>
+        <div class="flex items-center justify-between gap-x-1.5 flex-shrink-0 px-4 py-2">
+            <UDropdown class="w-full" :items="menuItems" mode="hover" :ui="{ width: 'w-[217px]' }"
+                :popper="{ placement: 'bottom-start' }">
+                <UButton class="w-full dark:hover:bg-gray-800/50 hover:bg-gray-200/50" color="white" variant="ghost">
+                    <UAvatar size="xs" src="https://avatars.githubusercontent.com/u/739984?v=4" alt="Avatar" />
+                    <span>Lucas</span>
+                    <UIcon name="i-heroicons-ellipsis-vertical" class="w-5 h-5 ml-auto" />
+                </UButton>
+            </UDropdown>
         </div>
     </div>
 </template>
