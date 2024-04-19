@@ -9,9 +9,9 @@ const links = [{
     to: '/band'
 },
 {
-    label: 'Usuários',
+    label: 'Membros',
     icon: 'i-heroicons-users',
-    to: '/users'
+    to: '/members'
 },
 {
     label: 'Configurações',
@@ -45,7 +45,7 @@ const logoLink = 'https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/326348237_1
                                 <div as="template">
                                     <ULink :to="link.to"
                                         class="group relative flex items-center gap-1.5 px-2.5 py-1.5 w-full rounded-md font-medium text-sm focus:outline-none focus-visible:outline-none dark:focus-visible:outline-none focus-visible:before:ring-inset focus-visible:before:ring-2 focus-visible:before:ring-primary-500 dark:focus-visible:before:ring-primary-400 before:absolute before:inset-px before:rounded-md disabled:cursor-not-allowed disabled:opacity-75 hover:text-gray-900 dark:hover:text-white hover:before:bg-gray-200/50 dark:hover:before:bg-gray-800/50"
-                                        active-class="text-gray-900 dark:text-gray hover:text-gray-800 dark:hover:text-white before:bg-gray-200/50 dark:before:bg-gray-800/50"
+                                        active-class="text-gray-900 dark:text-white hover:text-gray-800 dark:hover:text-white before:bg-gray-200/50 dark:before:bg-gray-800/50"
                                         inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
                                         <UIcon :name="link.icon" class="w-5 h-5" />
                                         <span class="text-sm truncate relative">{{ link.label }}</span>

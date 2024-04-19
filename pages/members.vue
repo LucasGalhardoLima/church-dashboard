@@ -1,8 +1,8 @@
 <template>
     <NuxtLayout name="content">
         <template #title>
-            <h1>Usuários</h1>
+            <h1>Membros</h1>
         </template>
-        Conteúdo da página de usuários
+        Conteúdo da página de membros
     </NuxtLayout>
 </template>
