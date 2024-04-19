@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.20",
     "@nuxt/ui": "^2.15.1",
     "@vercel/speed-insights": "^1.0.10",
     "nuxt": "^3.11.2",

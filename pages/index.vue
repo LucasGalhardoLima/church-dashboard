@@ -1,30 +1,21 @@
 <template>
-    <div class="flex-col items-stretch relative w-full flex-1 flex">
-        <header
-            class="h-[4rem] flex-shrink-0 flex items-center border-b border-gray-200 dark:border-gray-800 px-4 gap-x-4 min-w-0">
-            <div class="flex items-center justify-between flex-1 gap-x-1.5 min-w-0">
-                <div class="flex items-stretch gap-1.5 min-w-0">
-                    <UButton class="lg:hidden disabled:cursor-not-allowed disabled:opacity-75"
-                        icon="i-heroicons-bars-3-20-solid" size="sm" color="primary" square variant="solid" />
-                    <h1 class="flex items-center gap-1.5 font-semibold text-gray-900 dark:text-white min-w-0">
-                        <span class="truncate">Início</span>
-                    </h1>
-                </div>
-                <div class="flex items-stretch flex-shrink-0 gap-1.5">
-                    <div class="relative inline-flex">
-                        <UButton class="disabled:cursor-not-allowed disabled:opacity-75 inline-flex items-center"
-                            icon="i-heroicons-bell" size="md" variant="ghost" :ui="{ rounded: 'rounded-full' }">
-                            <span
-                                class="absolute rounded-full ring-1 ring-white dark:ring-gray-900 flex items-center justify-center text-white dark:text-gray-900 font-medium whitespace-nowrap h-2 min-w-[0.5rem] text-[7px] p-0.5 top-2 right-3 bg-red-500 dark:bg-red-400"></span>
+    <NuxtLayout name="content">
+        <template #title>
+            <h1>Início</h1>
+        </template>
+        <template #actions>
+            <div class="flex items-stretch flex-shrink-0 gap-1.5">
+                <div class="relative inline-flex">
+                    <UButton class="disabled:cursor-not-allowed disabled:opacity-75 inline-flex items-center"
+                        icon="i-heroicons-bell" size="md" variant="ghost" :ui="{ rounded: 'rounded-full' }">
+                        <span
+                            class="absolute rounded-full ring-1 ring-white dark:ring-gray-900 flex items-center justify-center text-white dark:text-gray-900 font-medium whitespace-nowrap h-2 min-w-[0.5rem] text-[7px] p-0.5 top-2 right-3 bg-red-500 dark:bg-red-400"></span>
 
-                        </UButton>
+                    </UButton>
 
-                    </div>
                 </div>
             </div>
-        </header>
-        <main class="py-4 px-4">
-            <h2>Conteúdo</h2>
-        </main>
-    </div>
+        </template>
+        Conteúdo da página inicial
+    </NuxtLayout>
 </template>
